@@ -22,6 +22,6 @@ switch (language) {
 
 ReactDOM.render(
 	<IntlProvider locale={language} messages={currentLanguage}>
-		<JobsList/>
+		<JobsList />
 	</IntlProvider>, document.getElementById("root")
 );

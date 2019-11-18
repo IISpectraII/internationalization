@@ -34,11 +34,16 @@ export default class JobsList extends React.Component {
     ]
   };
 
+  tableColor() {
+    let l =navigator.language;
+    return l === "es-ES" ? "thead-light" : "thead-dark"; 
+  }
+
   render() {
     return (
       <div>
         <table className="table">
-          <thead className={<FormattedMessage id="Header"/>}>
+          <thead className={this.tableColor()}>
             <tr>
               <th scope="col">#</th>
               <th scope="col"><FormattedMessage id="Position"/></th>

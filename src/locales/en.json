@@ -1,3 +1,11 @@
 {
+    "Position": "Position",
+	"Company": "Company",
+	"Salary": "Salary",
+	"City": "City",
+	"PulibicationDate": "Publication Date",
+	"Views": "Views",
+	"Million": "Million",
+    "Millions": "Millions",
     "Header": "thead-dark"
 }
