@@ -1,5 +1,6 @@
 import React from 'react';
 import Job from "./job";
+import { FormattedMessage } from 'react-intl';
 
 export default class JobsList extends React.Component {
 
@@ -11,7 +12,8 @@ export default class JobsList extends React.Component {
     	  "company": "Schneider Electric", 
     	  "salary": 4.5,
     	  "city": "Bogotá, Colombia",
-        "date": "2019-03-26"
+        "date": "2019-03-26",
+        "visit": 15
       }, 
       {
         "id": "0002",
@@ -36,14 +38,15 @@ export default class JobsList extends React.Component {
     return (
       <div>
         <table className="table">
-          <thead className="thead-dark">
+          <thead className={<FormattedMessage id="Header"/>}>
             <tr>
               <th scope="col">#</th>
-              <th scope="col">Position</th>
-              <th scope="col">Company</th>
-              <th scope="col">Salary</th>
-              <th scope="col">City</th>
-              <th scope="col">Publication date</th>
+              <th scope="col"><FormattedMessage id="Position"/></th>
+              <th scope="col"><FormattedMessage id="Company"/></th>
+              <th scope="col"><FormattedMessage id="Salary"/></th>
+              <th scope="col"><FormattedMessage id="City"/></th>
+              <th scope="col"><FormattedMessage id="PulibicationDate"/></th>
+              <th scope="col"><FormattedMessage id="Views"/></th>
             </tr>
           </thead>
           <tbody>
